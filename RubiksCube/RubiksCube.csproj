@@ -81,6 +81,10 @@
   </ItemGroup>
   <ItemGroup>
     <Content Include="Images\1200px-Scramble.svg.png" />
+    <Content Include="Images\cross.png" />
+    <Content Include="Images\good white cross and done wrong.png" />
+    <Content Include="Images\how-to-solve-cube-formula.png" />
+    <Content Include="Images\rubiks-cube-tutorial.jpg" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

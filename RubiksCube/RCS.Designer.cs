@@ -35,7 +35,13 @@ namespace RubiksCube
             this.lblInstructions = new System.Windows.Forms.Label();
             this.btnNext = new System.Windows.Forms.Button();
             this.btnPrevious = new System.Windows.Forms.Button();
+            this.pbxMotions = new System.Windows.Forms.PictureBox();
+            this.pbxSolution = new System.Windows.Forms.PictureBox();
+            this.pbxCross = new System.Windows.Forms.PictureBox();
             ((System.ComponentModel.ISupportInitialize)(this.pbxRubiksCube)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pbxMotions)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pbxSolution)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pbxCross)).BeginInit();
             this.SuspendLayout();
             // 
             // pbxRubiksCube
@@ -91,12 +97,47 @@ namespace RubiksCube
             this.btnPrevious.Text = "Previous";
             this.btnPrevious.UseVisualStyleBackColor = true;
             this.btnPrevious.Visible = false;
+            this.btnPrevious.Click += new System.EventHandler(this.btnPrevious_Click);
+            // 
+            // pbxMotions
+            // 
+            this.pbxMotions.Image = ((System.Drawing.Image)(resources.GetObject("pbxMotions.Image")));
+            this.pbxMotions.Location = new System.Drawing.Point(296, 59);
+            this.pbxMotions.Name = "pbxMotions";
+            this.pbxMotions.Size = new System.Drawing.Size(418, 425);
+            this.pbxMotions.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
+            this.pbxMotions.TabIndex = 5;
+            this.pbxMotions.TabStop = false;
+            this.pbxMotions.Visible = false;
+            // 
+            // pbxSolution
+            // 
+            this.pbxSolution.Image = ((System.Drawing.Image)(resources.GetObject("pbxSolution.Image")));
+            this.pbxSolution.Location = new System.Drawing.Point(49, 50);
+            this.pbxSolution.Name = "pbxSolution";
+            this.pbxSolution.Size = new System.Drawing.Size(898, 447);
+            this.pbxSolution.TabIndex = 6;
+            this.pbxSolution.TabStop = false;
+            this.pbxSolution.Visible = false;
+            // 
+            // pbxCross
+            // 
+            this.pbxCross.Image = ((System.Drawing.Image)(resources.GetObject("pbxCross.Image")));
+            this.pbxCross.Location = new System.Drawing.Point(264, 148);
+            this.pbxCross.Name = "pbxCross";
+            this.pbxCross.Size = new System.Drawing.Size(480, 239);
+            this.pbxCross.TabIndex = 7;
+            this.pbxCross.TabStop = false;
+            this.pbxCross.Visible = false;
             // 
             // RCS
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(1008, 598);
+            this.Controls.Add(this.pbxCross);
+            this.Controls.Add(this.pbxSolution);
+            this.Controls.Add(this.pbxMotions);
             this.Controls.Add(this.btnPrevious);
             this.Controls.Add(this.btnNext);
             this.Controls.Add(this.btnBegin);
@@ -106,6 +147,9 @@ namespace RubiksCube
             this.Text = "Form1";
             this.Load += new System.EventHandler(this.RCS_Load);
             ((System.ComponentModel.ISupportInitialize)(this.pbxRubiksCube)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pbxMotions)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pbxSolution)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pbxCross)).EndInit();
             this.ResumeLayout(false);
 
         }
@@ -117,6 +161,9 @@ namespace RubiksCube
         private System.Windows.Forms.Label lblInstructions;
         private System.Windows.Forms.Button btnNext;
         private System.Windows.Forms.Button btnPrevious;
+        private System.Windows.Forms.PictureBox pbxMotions;
+        private System.Windows.Forms.PictureBox pbxSolution;
+        private System.Windows.Forms.PictureBox pbxCross;
     }
 }
 
