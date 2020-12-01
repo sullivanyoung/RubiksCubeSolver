@@ -49,6 +49,9 @@ namespace RubiksCube
             this.pbxFinalCorners = new System.Windows.Forms.PictureBox();
             this.pbxFinish = new System.Windows.Forms.PictureBox();
             this.pbxDone = new System.Windows.Forms.PictureBox();
+            this.lblStep = new System.Windows.Forms.Label();
+            this.lblStepCount = new System.Windows.Forms.Label();
+            this.btnRestart = new System.Windows.Forms.Button();
             ((System.ComponentModel.ISupportInitialize)(this.pbxRubiksCube)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pbxMotions)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pbxSolution)).BeginInit();
@@ -272,11 +275,42 @@ namespace RubiksCube
             this.pbxDone.TabStop = false;
             this.pbxDone.Visible = false;
             // 
+            // lblStep
+            // 
+            this.lblStep.AutoSize = true;
+            this.lblStep.Location = new System.Drawing.Point(27, 13);
+            this.lblStep.Name = "lblStep";
+            this.lblStep.Size = new System.Drawing.Size(32, 13);
+            this.lblStep.TabIndex = 19;
+            this.lblStep.Text = "Step:";
+            // 
+            // lblStepCount
+            // 
+            this.lblStepCount.AutoSize = true;
+            this.lblStepCount.Location = new System.Drawing.Point(66, 13);
+            this.lblStepCount.Name = "lblStepCount";
+            this.lblStepCount.Size = new System.Drawing.Size(0, 13);
+            this.lblStepCount.TabIndex = 20;
+            // 
+            // btnRestart
+            // 
+            this.btnRestart.Location = new System.Drawing.Point(435, 540);
+            this.btnRestart.Name = "btnRestart";
+            this.btnRestart.Size = new System.Drawing.Size(113, 46);
+            this.btnRestart.TabIndex = 21;
+            this.btnRestart.Text = "Restart";
+            this.btnRestart.UseVisualStyleBackColor = true;
+            this.btnRestart.Visible = false;
+            this.btnRestart.Click += new System.EventHandler(this.btnRestart_Click);
+            // 
             // RCS
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(1008, 598);
+            this.Controls.Add(this.btnRestart);
+            this.Controls.Add(this.lblStepCount);
+            this.Controls.Add(this.lblStep);
             this.Controls.Add(this.pbxDone);
             this.Controls.Add(this.pbxFinish);
             this.Controls.Add(this.pbxFinalCorners);
@@ -340,6 +374,9 @@ namespace RubiksCube
         private System.Windows.Forms.PictureBox pbxFinalCorners;
         private System.Windows.Forms.PictureBox pbxFinish;
         private System.Windows.Forms.PictureBox pbxDone;
+        private System.Windows.Forms.Label lblStep;
+        private System.Windows.Forms.Label lblStepCount;
+        private System.Windows.Forms.Button btnRestart;
     }
 }
 
