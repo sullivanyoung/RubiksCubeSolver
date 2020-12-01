@@ -98,20 +98,45 @@ namespace RubiksCube
                     pbxSecondLayerRight.Visible = true;
                     step++;
                     break;
+                case 10:
+                    lblInstructions.Text = "The next major step is creating the yellow cross on the opposite site from the completed white side." +
+                        "\n You can have three possible patters on the yellow side. " +
+                        "\n You can use this algorithm to go from one state to the next";
+                    pbxSecondLayerRight.Visible = false;
+                    pbxMakeYellowCross.Visible = true;
+                    pbxOrientYellowCross.Visible = true;
+                    step++;
+                    break;
                 case 11:
+                    lblInstructions.Text = "After making the yellow cross on the top side of the cube you need to finish the yellow side." +
+                        "\n You can do so by completing the algorithm below:" +
+                        "\n You may have to do this multiple times in order to get the tiles in the right orientation.";
+                    pbxMakeYellowCross.Visible = false;
+                    pbxOrientYellowCross.Visible = false;
+                    pbxFinishYellowSide.Visible = true;
                     step++;
                     break;
                 case 12:
+                    lblInstructions.Text = "Now we are on to solving the final layer!" +
+                        "\n Hold the Rubik's Cube with the completed yellow side facing up." +
+                        "\n If the corners' colors match the coresponding side colors on each side you are good to proceed to the next step." +
+                        "\n If they are not, follow the alogrithem listed below to move the corners in the right location.";
+                    pbxFinishYellowSide.Visible = false;
+                    pbxFinalCorners.Visible = true;
                     step++;
                     break;
                 case 13:
+                    lblInstructions.Text = "THE FINAL STEP!" +
+                        "\n You can just repeat the alogrithm below and eventually the cube will be complete! If not, try to trace your steps back to a step looks like your cube.";
+                    pbxFinalCorners.Visible = false;
+                    pbxFinish.Visible = true;
                     step++;
                     break;
                 case 14:
-                    step++;
+                    lblInstructions.Text = "CONGRATULATIONS, YOU FINSIHED THE RUBIK'S CUBE!";
+                    pbxFinish.Visible = false;
+                    pbxDone.Visible = true;
                     break;
-
-
             }
         }
 

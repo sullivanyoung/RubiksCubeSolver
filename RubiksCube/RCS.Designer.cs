@@ -43,6 +43,12 @@ namespace RubiksCube
             this.pbxSecondLayer = new System.Windows.Forms.PictureBox();
             this.pbxSecondLayerMotions = new System.Windows.Forms.PictureBox();
             this.pbxSecondLayerRight = new System.Windows.Forms.PictureBox();
+            this.pbxOrientYellowCross = new System.Windows.Forms.PictureBox();
+            this.pbxMakeYellowCross = new System.Windows.Forms.PictureBox();
+            this.pbxFinishYellowSide = new System.Windows.Forms.PictureBox();
+            this.pbxFinalCorners = new System.Windows.Forms.PictureBox();
+            this.pbxFinish = new System.Windows.Forms.PictureBox();
+            this.pbxDone = new System.Windows.Forms.PictureBox();
             ((System.ComponentModel.ISupportInitialize)(this.pbxRubiksCube)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pbxMotions)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pbxSolution)).BeginInit();
@@ -52,6 +58,12 @@ namespace RubiksCube
             ((System.ComponentModel.ISupportInitialize)(this.pbxSecondLayer)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pbxSecondLayerMotions)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pbxSecondLayerRight)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pbxOrientYellowCross)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pbxMakeYellowCross)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pbxFinishYellowSide)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pbxFinalCorners)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pbxFinish)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pbxDone)).BeginInit();
             this.SuspendLayout();
             // 
             // pbxRubiksCube
@@ -194,11 +206,83 @@ namespace RubiksCube
             this.pbxSecondLayerRight.TabStop = false;
             this.pbxSecondLayerRight.Visible = false;
             // 
+            // pbxOrientYellowCross
+            // 
+            this.pbxOrientYellowCross.Image = ((System.Drawing.Image)(resources.GetObject("pbxOrientYellowCross.Image")));
+            this.pbxOrientYellowCross.Location = new System.Drawing.Point(368, 102);
+            this.pbxOrientYellowCross.Name = "pbxOrientYellowCross";
+            this.pbxOrientYellowCross.Size = new System.Drawing.Size(294, 97);
+            this.pbxOrientYellowCross.SizeMode = System.Windows.Forms.PictureBoxSizeMode.AutoSize;
+            this.pbxOrientYellowCross.TabIndex = 13;
+            this.pbxOrientYellowCross.TabStop = false;
+            this.pbxOrientYellowCross.Visible = false;
+            // 
+            // pbxMakeYellowCross
+            // 
+            this.pbxMakeYellowCross.Image = ((System.Drawing.Image)(resources.GetObject("pbxMakeYellowCross.Image")));
+            this.pbxMakeYellowCross.Location = new System.Drawing.Point(280, 235);
+            this.pbxMakeYellowCross.Name = "pbxMakeYellowCross";
+            this.pbxMakeYellowCross.Size = new System.Drawing.Size(479, 98);
+            this.pbxMakeYellowCross.SizeMode = System.Windows.Forms.PictureBoxSizeMode.AutoSize;
+            this.pbxMakeYellowCross.TabIndex = 14;
+            this.pbxMakeYellowCross.TabStop = false;
+            this.pbxMakeYellowCross.Visible = false;
+            // 
+            // pbxFinishYellowSide
+            // 
+            this.pbxFinishYellowSide.Image = ((System.Drawing.Image)(resources.GetObject("pbxFinishYellowSide.Image")));
+            this.pbxFinishYellowSide.Location = new System.Drawing.Point(181, 156);
+            this.pbxFinishYellowSide.Name = "pbxFinishYellowSide";
+            this.pbxFinishYellowSide.Size = new System.Drawing.Size(652, 129);
+            this.pbxFinishYellowSide.SizeMode = System.Windows.Forms.PictureBoxSizeMode.AutoSize;
+            this.pbxFinishYellowSide.TabIndex = 15;
+            this.pbxFinishYellowSide.TabStop = false;
+            this.pbxFinishYellowSide.Visible = false;
+            // 
+            // pbxFinalCorners
+            // 
+            this.pbxFinalCorners.Image = ((System.Drawing.Image)(resources.GetObject("pbxFinalCorners.Image")));
+            this.pbxFinalCorners.Location = new System.Drawing.Point(247, 148);
+            this.pbxFinalCorners.Name = "pbxFinalCorners";
+            this.pbxFinalCorners.Size = new System.Drawing.Size(537, 238);
+            this.pbxFinalCorners.SizeMode = System.Windows.Forms.PictureBoxSizeMode.AutoSize;
+            this.pbxFinalCorners.TabIndex = 16;
+            this.pbxFinalCorners.TabStop = false;
+            this.pbxFinalCorners.Visible = false;
+            // 
+            // pbxFinish
+            // 
+            this.pbxFinish.Image = ((System.Drawing.Image)(resources.GetObject("pbxFinish.Image")));
+            this.pbxFinish.Location = new System.Drawing.Point(273, 148);
+            this.pbxFinish.Name = "pbxFinish";
+            this.pbxFinish.Size = new System.Drawing.Size(486, 211);
+            this.pbxFinish.SizeMode = System.Windows.Forms.PictureBoxSizeMode.AutoSize;
+            this.pbxFinish.TabIndex = 17;
+            this.pbxFinish.TabStop = false;
+            this.pbxFinish.Visible = false;
+            // 
+            // pbxDone
+            // 
+            this.pbxDone.Image = ((System.Drawing.Image)(resources.GetObject("pbxDone.Image")));
+            this.pbxDone.Location = new System.Drawing.Point(339, 83);
+            this.pbxDone.Name = "pbxDone";
+            this.pbxDone.Size = new System.Drawing.Size(353, 333);
+            this.pbxDone.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
+            this.pbxDone.TabIndex = 18;
+            this.pbxDone.TabStop = false;
+            this.pbxDone.Visible = false;
+            // 
             // RCS
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(1008, 598);
+            this.Controls.Add(this.pbxDone);
+            this.Controls.Add(this.pbxFinish);
+            this.Controls.Add(this.pbxFinalCorners);
+            this.Controls.Add(this.pbxFinishYellowSide);
+            this.Controls.Add(this.pbxMakeYellowCross);
+            this.Controls.Add(this.pbxOrientYellowCross);
             this.Controls.Add(this.pbxSecondLayerRight);
             this.Controls.Add(this.pbxSecondLayerMotions);
             this.Controls.Add(this.pbxSecondLayer);
@@ -224,6 +308,12 @@ namespace RubiksCube
             ((System.ComponentModel.ISupportInitialize)(this.pbxSecondLayer)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pbxSecondLayerMotions)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pbxSecondLayerRight)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pbxOrientYellowCross)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pbxMakeYellowCross)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pbxFinishYellowSide)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pbxFinalCorners)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pbxFinish)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pbxDone)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -244,6 +334,12 @@ namespace RubiksCube
         private System.Windows.Forms.PictureBox pbxSecondLayer;
         private System.Windows.Forms.PictureBox pbxSecondLayerMotions;
         private System.Windows.Forms.PictureBox pbxSecondLayerRight;
+        private System.Windows.Forms.PictureBox pbxOrientYellowCross;
+        private System.Windows.Forms.PictureBox pbxMakeYellowCross;
+        private System.Windows.Forms.PictureBox pbxFinishYellowSide;
+        private System.Windows.Forms.PictureBox pbxFinalCorners;
+        private System.Windows.Forms.PictureBox pbxFinish;
+        private System.Windows.Forms.PictureBox pbxDone;
     }
 }
 

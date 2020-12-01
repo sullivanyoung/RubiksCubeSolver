@@ -82,13 +82,21 @@
   <ItemGroup>
     <Content Include="Images\1200px-Scramble.svg.png" />
     <Content Include="Images\cross.png" />
+    <Content Include="Images\detailed_cube_icon.png" />
     <Content Include="Images\good white cross and done wrong.png" />
     <Content Include="Images\how-to-solve-cube-formula.png" />
+    <Content Include="Images\make yellow cross orient.jpg" />
+    <Content Include="Images\make yellow cross.jpg" />
+    <Content Include="Images\Orient yellow cross.jpg" />
     <Content Include="Images\rubiks+cube+edge+insert+left.png" />
     <Content Include="Images\rubiks-cube-step3-c2.jpg" />
     <Content Include="Images\rubiks-cube-tutorial.jpg" />
     <Content Include="Images\Second Layer Right.jpg" />
     <Content Include="Images\stae-1-formula-1.png" />
+    <Content Include="Images\stage-5-formula.png" />
+    <Content Include="Images\stage-6-12.png" />
+    <Content Include="Images\stage-6-4.png" />
+    <Content Include="Images\stage-6-8.png" />
     <Content Include="Images\step2ex1.png" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
