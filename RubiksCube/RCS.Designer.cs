@@ -38,10 +38,20 @@ namespace RubiksCube
             this.pbxMotions = new System.Windows.Forms.PictureBox();
             this.pbxSolution = new System.Windows.Forms.PictureBox();
             this.pbxCross = new System.Windows.Forms.PictureBox();
+            this.pbxSide1Movements = new System.Windows.Forms.PictureBox();
+            this.pbxSide1Correct = new System.Windows.Forms.PictureBox();
+            this.pbxSecondLayer = new System.Windows.Forms.PictureBox();
+            this.pbxSecondLayerMotions = new System.Windows.Forms.PictureBox();
+            this.pbxSecondLayerRight = new System.Windows.Forms.PictureBox();
             ((System.ComponentModel.ISupportInitialize)(this.pbxRubiksCube)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pbxMotions)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pbxSolution)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pbxCross)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pbxSide1Movements)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pbxSide1Correct)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pbxSecondLayer)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pbxSecondLayerMotions)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pbxSecondLayerRight)).BeginInit();
             this.SuspendLayout();
             // 
             // pbxRubiksCube
@@ -72,9 +82,8 @@ namespace RubiksCube
             this.lblInstructions.Name = "lblInstructions";
             this.lblInstructions.Size = new System.Drawing.Size(1008, 598);
             this.lblInstructions.TabIndex = 2;
-            this.lblInstructions.Text = "This is where your instructions will load...";
+            this.lblInstructions.Text = "Welcome to the Rubik\'s Cube Solver!";
             this.lblInstructions.TextAlign = System.Drawing.ContentAlignment.TopCenter;
-            this.lblInstructions.Visible = false;
             this.lblInstructions.Click += new System.EventHandler(this.lblInstructions_Click);
             // 
             // btnNext
@@ -130,11 +139,71 @@ namespace RubiksCube
             this.pbxCross.TabStop = false;
             this.pbxCross.Visible = false;
             // 
+            // pbxSide1Movements
+            // 
+            this.pbxSide1Movements.Image = ((System.Drawing.Image)(resources.GetObject("pbxSide1Movements.Image")));
+            this.pbxSide1Movements.Location = new System.Drawing.Point(264, 116);
+            this.pbxSide1Movements.Name = "pbxSide1Movements";
+            this.pbxSide1Movements.Size = new System.Drawing.Size(480, 239);
+            this.pbxSide1Movements.SizeMode = System.Windows.Forms.PictureBoxSizeMode.CenterImage;
+            this.pbxSide1Movements.TabIndex = 8;
+            this.pbxSide1Movements.TabStop = false;
+            this.pbxSide1Movements.Visible = false;
+            // 
+            // pbxSide1Correct
+            // 
+            this.pbxSide1Correct.Image = ((System.Drawing.Image)(resources.GetObject("pbxSide1Correct.Image")));
+            this.pbxSide1Correct.Location = new System.Drawing.Point(264, 132);
+            this.pbxSide1Correct.Name = "pbxSide1Correct";
+            this.pbxSide1Correct.Size = new System.Drawing.Size(480, 239);
+            this.pbxSide1Correct.SizeMode = System.Windows.Forms.PictureBoxSizeMode.CenterImage;
+            this.pbxSide1Correct.TabIndex = 9;
+            this.pbxSide1Correct.TabStop = false;
+            this.pbxSide1Correct.Visible = false;
+            // 
+            // pbxSecondLayer
+            // 
+            this.pbxSecondLayer.Image = ((System.Drawing.Image)(resources.GetObject("pbxSecondLayer.Image")));
+            this.pbxSecondLayer.Location = new System.Drawing.Point(290, 50);
+            this.pbxSecondLayer.Name = "pbxSecondLayer";
+            this.pbxSecondLayer.Size = new System.Drawing.Size(454, 453);
+            this.pbxSecondLayer.SizeMode = System.Windows.Forms.PictureBoxSizeMode.AutoSize;
+            this.pbxSecondLayer.TabIndex = 10;
+            this.pbxSecondLayer.TabStop = false;
+            this.pbxSecondLayer.Visible = false;
+            // 
+            // pbxSecondLayerMotions
+            // 
+            this.pbxSecondLayerMotions.Image = ((System.Drawing.Image)(resources.GetObject("pbxSecondLayerMotions.Image")));
+            this.pbxSecondLayerMotions.Location = new System.Drawing.Point(221, 156);
+            this.pbxSecondLayerMotions.Name = "pbxSecondLayerMotions";
+            this.pbxSecondLayerMotions.Size = new System.Drawing.Size(600, 215);
+            this.pbxSecondLayerMotions.SizeMode = System.Windows.Forms.PictureBoxSizeMode.AutoSize;
+            this.pbxSecondLayerMotions.TabIndex = 11;
+            this.pbxSecondLayerMotions.TabStop = false;
+            this.pbxSecondLayerMotions.Visible = false;
+            // 
+            // pbxSecondLayerRight
+            // 
+            this.pbxSecondLayerRight.Image = ((System.Drawing.Image)(resources.GetObject("pbxSecondLayerRight.Image")));
+            this.pbxSecondLayerRight.Location = new System.Drawing.Point(181, 83);
+            this.pbxSecondLayerRight.Name = "pbxSecondLayerRight";
+            this.pbxSecondLayerRight.Size = new System.Drawing.Size(640, 368);
+            this.pbxSecondLayerRight.SizeMode = System.Windows.Forms.PictureBoxSizeMode.AutoSize;
+            this.pbxSecondLayerRight.TabIndex = 12;
+            this.pbxSecondLayerRight.TabStop = false;
+            this.pbxSecondLayerRight.Visible = false;
+            // 
             // RCS
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(1008, 598);
+            this.Controls.Add(this.pbxSecondLayerRight);
+            this.Controls.Add(this.pbxSecondLayerMotions);
+            this.Controls.Add(this.pbxSecondLayer);
+            this.Controls.Add(this.pbxSide1Correct);
+            this.Controls.Add(this.pbxSide1Movements);
             this.Controls.Add(this.pbxCross);
             this.Controls.Add(this.pbxSolution);
             this.Controls.Add(this.pbxMotions);
@@ -150,7 +219,13 @@ namespace RubiksCube
             ((System.ComponentModel.ISupportInitialize)(this.pbxMotions)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pbxSolution)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pbxCross)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pbxSide1Movements)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pbxSide1Correct)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pbxSecondLayer)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pbxSecondLayerMotions)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pbxSecondLayerRight)).EndInit();
             this.ResumeLayout(false);
+            this.PerformLayout();
 
         }
 
@@ -164,6 +239,11 @@ namespace RubiksCube
         private System.Windows.Forms.PictureBox pbxMotions;
         private System.Windows.Forms.PictureBox pbxSolution;
         private System.Windows.Forms.PictureBox pbxCross;
+        private System.Windows.Forms.PictureBox pbxSide1Movements;
+        private System.Windows.Forms.PictureBox pbxSide1Correct;
+        private System.Windows.Forms.PictureBox pbxSecondLayer;
+        private System.Windows.Forms.PictureBox pbxSecondLayerMotions;
+        private System.Windows.Forms.PictureBox pbxSecondLayerRight;
     }
 }
 
